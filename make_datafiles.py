@@ -124,7 +124,8 @@ def get_art_abs(story_file):
 
 
 def write_to_bin(out_file):
-  story_fnames = [name for name in os.listdir(tokenized_stories_dir) if os.path.isfile(tokenized_stories_dir+'\\'+name) ]
+  # story_fnames = [name for name in os.listdir(tokenized_stories_dir) if os.path.isfile(tokenized_stories_dir+'\\'+name) ]
+  story_fnames = [name for name in os.listdir(tokenized_stories_dir)]
   num_stories = len(story_fnames)
   # print(story_fnames)
   # for idx,s in enumerate(story_fnames):
